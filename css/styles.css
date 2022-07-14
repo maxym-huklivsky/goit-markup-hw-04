@@ -135,23 +135,8 @@ a {
 	margin-right: 50px;
 }
 
-.header-contacs-item::before {
-	display: inline-block;
+.contacs-icon {
 	margin-right: 10px;
-
-	content: '';
-}
-
-.header-contacs-item:nth-child(1)::before {
-	height: 12px;
-	width: 16px;
-	background-image: url(../images/header/envelope.svg);
-}
-
-.header-contacs-item:nth-child(2)::before {
-	height: 16px;
-	width: 10px;
-	background-image: url(../images/header/smartphone.svg);
 }
 
 .contacs {
@@ -172,6 +157,7 @@ a {
 .hover-adress:hover,
 .hover-adress:focus {
 	color: var(--accent-cl);
+	stroke: var(--accent-cl);
 }
 
 /* !!!index.html */
@@ -330,6 +316,31 @@ a {
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
+}
+
+.soc-list {
+	display: flex;
+	margin-top: 11px;
+	gap: 10px;
+}
+
+.soc-network {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: red;
+}
+
+.soc-network:hover,
+.soc-network:focus {
+	background-color: var(--accent-cl);
+	fill: #fff;
+}
+
+.soc-network-icon {
+	width: 20px;
+	height: 20px;
 }
 
 /*!!! portfolio.html */
