@@ -135,6 +135,25 @@ a {
 	margin-right: 50px;
 }
 
+.header-contacs-item::before {
+	display: inline-block;
+	margin-right: 10px;
+
+	content: '';
+}
+
+.header-contacs-item:nth-child(1)::before {
+	height: 12px;
+	width: 16px;
+	background-image: url(../images/header/envelope.svg);
+}
+
+.header-contacs-item:nth-child(2)::before {
+	height: 16px;
+	width: 10px;
+	background-image: url(../images/header/smartphone.svg);
+}
+
 .contacs {
 	display: flex;
 	margin-left: auto;
@@ -158,8 +177,11 @@ a {
 /* !!!index.html */
 /* Hero */
 .hero {
-	background-color: var(--dark-bg-cl);
 	padding: 200px 0;
+	background-color: #C4C4C4;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-pic.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .main-title {
@@ -211,6 +233,33 @@ a {
 
 .qualities-item {
 	width: 270px;
+}
+
+.qualities-item::before {
+	display: block;
+	margin-bottom: 30px;
+
+	content: '';
+	background-color: var(--light-bg-cl);
+	height: 120px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.qualities-item:nth-child(1)::before {
+	background-image: url(../images/qualities/Group.svg);
+}
+
+.qualities-item:nth-child(2)::before {
+	background-image: url(../images/qualities/clock\ 1.svg);
+}
+
+.qualities-item:nth-child(3)::before {
+	background-image: url(../images/qualities/diagram\ 1.svg);
+}
+
+.qualities-item:nth-child(4)::before {
+	background-image: url(../images/qualities/astronaut\ 1.svg);
 }
 
 .qualities-title {
