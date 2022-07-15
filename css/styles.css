@@ -444,6 +444,7 @@ a {
 
 .footer-container {
 	display: flex;
+	align-items: baseline;
 }
 
 .address-container {
